@@ -1,14 +1,22 @@
 ---
+import "../styles/global.css";
 import CommonHead from "../components/CommonHead.astro";
+import Header from "../components/Header.astro";
+import Sidebar from "../components/Sidebar.astro";
+
+const { title = "Michael Mandic" } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<CommonHead />
-		<title>Astro Basics</title>
+		<title>{title}</title>
 	</head>
-	<body>
-		<slot />
+	<body x-data="{ sidebarOpen: false }" class="bg-white dark:bg-black text-black dark:text-white font-text">
+		<Header />
+		<div class="pt-16">
+			<slot />
+		</div>
 	</body>
 </html>

@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@theme {
+  --font-text: "Inter", sans-serif;
+  --font-text-tight: "Inter Tight", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "Space Mono", monospace;
+}
