@@ -6,3 +6,13 @@
   --font-display: "Space Grotesk", sans-serif;
   --font-mono: "Space Mono", monospace;
 }
+
+::selection {
+  background-color: black;
+  color: white;
+
+  @variant dark {
+    background-color: white;
+    color: black;
+  }
+}

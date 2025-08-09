@@ -3,11 +3,12 @@ import { PanelLeft, PanelLeftClose } from "@lucide/astro";
 ---
 
 <header
-  class="fixed top-0 left-0 w-full px-5 lg:px-7 py-4 items-center flex justify-between bg-white dark:bg-black"
+  class="fixed top-0 left-0 w-full px-5 lg:px-7 bg-linear-to-b from-neutral-900 to-transparent from h-16 items-center flex justify-between "
 >
   <div id="header-left">
-    <a href="/" class="font-display font-semibold text-xl md:text-2xl"
-      >Michael Mandic</a
+    <a href="/" class="font-display   text-lg lg:text-xl"
+      ><span x-text="scrolled ? 'M' : 'Michael Mandic'" class="transition-all"
+      ></span></a
     >
   </div>
   <div id="header-right">
