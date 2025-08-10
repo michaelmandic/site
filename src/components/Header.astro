@@ -3,32 +3,60 @@ import { PanelLeft, PanelLeftClose } from "@lucide/astro";
 ---
 
 <header
-  class="fixed top-0 left-0 w-full px-5 lg:px-7 bg-linear-to-b from-neutral-900 to-transparent from h-16 items-center flex justify-between "
+  class="fixed top-0 left-0 w-full lg:px-7 bg-linear-to-b from-neutral-900 to-transparent h-16 items-center flex justify-center"
 >
-  <div id="header-left">
-    <a href="/" class="font-display   text-lg lg:text-xl"
-      ><span x-text="scrolled ? 'M' : 'Michael Mandic'" class="transition-all"
-      ></span></a
-    >
-  </div>
-  <div id="header-right">
-    <button
-      @click="sidebarOpen = !sidebarOpen"
-      class="text-neutral-500 hover:text-black hover:dark:text-white hover:cursor-pointer transition-colors lg:hidden"
-    >
-      <PanelLeft
-        x-show="!sidebarOpen"
-        size={16}
-        stroke-width={1.5}
-        absoluteStrokeWidth={true}
-      />
-      <PanelLeftClose
-        x-show="sidebarOpen"
-        size={16}
-        stroke-width={1.5}
-        absoluteStrokeWidth={true}
-      />
-      <span class="sr-only">Toggle sidebar</span>
-    </button>
+  <div class="flex items-center justify-between px-5 w-full max-w-2xl">
+    <div id="header-left flex justify-center h-16 items-center">
+      <div class="relative flex items-center font-display text-lg lg:text-xl">
+        <a
+          href="/"
+          x-cloak
+          x-show="!scrolled"
+          x-transition:enter="transition ease-out duration-100 delay-100"
+          x-transition:enter-start="opacity-0 scale-100"
+          x-transition:enter-end="opacity-100 scale-100"
+          x-transition:leave="transition ease-in duration-100"
+          x-transition:leave-start="opacity-100 scale-100"
+          x-transition:leave-end="opacity-0 scale-100"
+          class="absolute left-0 w-max"
+        >
+          Michael Mandic
+        </a>
+        <a
+          href="/"
+          x-cloak
+          x-show="scrolled"
+          x-transition:enter="transition ease-out duration-100 delay-100"
+          x-transition:enter-start="opacity-0 scale-100"
+          x-transition:enter-end="opacity-100 scale-100"
+          x-transition:leave="transition ease-in duration-100"
+          x-transition:leave-start="opacity-100 scale-100"
+          x-transition:leave-end="opacity-0 scale-100"
+          class="absolute left-0 w-max"
+        >
+          M
+        </a>
+      </div>
+    </div>
+    <div id="header-right flex items-center justify-center">
+      <button
+        @click="sidebarOpen = !sidebarOpen"
+        class="text-neutral-500 block hover:text-black hover:dark:text-white hover:cursor-pointer transition-colors lg:hidden"
+      >
+        <PanelLeft
+          x-show="!sidebarOpen"
+          size={16}
+          stroke-width={1.5}
+          absoluteStrokeWidth={true}
+        />
+        <PanelLeftClose
+          x-show="sidebarOpen"
+          size={16}
+          stroke-width={1.5}
+          absoluteStrokeWidth={true}
+        />
+        <span class="sr-only">Toggle sidebar</span>
+      </button>
+    </div>
   </div>
 </header>

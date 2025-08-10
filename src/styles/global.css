@@ -16,3 +16,8 @@
     color: black;
   }
 }
+
+:root, 
+* {
+  scrollbar-width: thin;
+}
