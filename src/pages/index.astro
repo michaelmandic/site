@@ -1,48 +1,65 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Section from "../components/Section.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <MainLayout>
-  <h1 class="font-display text-3xl font-medium mt-16 mb-2 px-5">
-    Hello World, I'm Mike
-  </h1>
-  <p class="font-text text-neutral-300 px-5 leading-[1.5em] text-balance">
-    I'm a software engineer based in Belgrade, citizen of Serbia and the EU.
-  </p>
-  <h2 class="font-display text-2xl font-medium mt-16 mb-2 px-5">Education</h2>
-  <small class="px-5 block font-text text-xs text-neutral-400">2024 - Present </small>
-  <p class="font-text px-5 leading-[1.5em] text-balance">
-    BEng in Software Engineering
-  </p>
-  <small class="px-5 block font-text text-xs text-neutral-400"
-    >University of Belgrade, School of Electrical Engineering
-  </small>
-  <h2 class="font-display text-2xl font-medium mt-16 mb-2 px-5">Skills</h2>
-  <ul class="font-text text-neutral-300 px-5 leading-[1.5em] text-balance flex flex-col gap-2">
-    <li>
-      <small class="font-text block text-xs text-neutral-400"
-        >Programming Languages & Frameworks
-      </small>Python, C++, JavaScript, HTML/CSS, React, Next.js, TailwindCSS
-    </li>
-    <li>
-      <small class="font-text block text-xs text-neutral-400">Tools</small>Git,
-      Linux, VS Code, PyCharm, Figma, MS Office/365
-    </li>
-    <li>
-      <small class="font-text block text-xs text-neutral-400">Languages</small>
-      English (Fluent), Serbian (Native), German (Conversational)
-    </li>
-  </ul>
-  <h2 class="font-display text-2xl font-medium mt-16 mb-2 px-5">Projects</h2>
-  <p class="font-text text-neutral-300 px-5 leading-[1.5em] text-balance">
-    ...
-  </p>
-  <h2 class="font-display text-2xl font-medium mt-16 mb-2 px-5">Blog</h2>
-  <p class="font-text text-neutral-300 px-5 leading-[1.5em] text-balance">
-    ...
-  </p>
-  <h2 class="font-display text-2xl font-medium mt-16 mb-2 px-5">Contact</h2>
-  <p class="font-text text-neutral-300 px-5 leading-[1.5em] text-balance">
-    You can reach out to me via email or LinkedIn.
-  </p>
+  <Hero title="Hello World, I'm Mike">
+    <p class="font-text px-5 leading-[1.5em] text-balance">
+      I'm a software engineer based in Belgrade, citizen of Serbia and the EU.
+    </p>
+  </Hero>
+
+  <Section title="Education">
+    <span class="px-5 block font-text text-xs mb-0.5">2024 - Present </span>
+    <p
+      class="font-text px-5 leading-[1.5em] text-black dark:text-white text-balance"
+    >
+      BEng in Software Engineering
+    </p>
+    <span class="px-5 block font-text mt-0.5 text-xs"
+      >University of Belgrade, School of Electrical Engineering
+    </span>
+  </Section>
+
+  <Section title="Skills">
+    <ul
+      class="font-text text-black dark:text-white px-5 leading-[1.5em] text-balance flex flex-col gap-2"
+    >
+      <li>
+        <small
+          class="font-text block text-xs text-neutral-500 dark:text-neutral-400"
+          >Programming Languages & Frameworks
+        </small>Python, C++, JavaScript, HTML/CSS, React, Next.js, TailwindCSS
+      </li>
+      <li>
+        <small
+          class="font-text block text-xs text-neutral-500 dark:text-neutral-400"
+          >Tools</small
+        >Git, Linux, VS Code, PyCharm, Figma, MS Office/365
+      </li>
+      <li>
+        <small
+          class="font-text block text-xs text-neutral-500 dark:text-neutral-400"
+          >Languages</small
+        >
+        English (Fluent), Serbian (Native), German (Conversational)
+      </li>
+    </ul>
+  </Section>
+
+  <Section title="Projects">
+    <p class="font-text px-5 leading-[1.5em] text-balance">...</p>
+  </Section>
+
+  <Section title="Blog">
+    <p class="font-text px-5 leading-[1.5em] text-balance">...</p>
+  </Section>
+
+  <Section title="Contact">
+    <p class="font-text px-5 leading-[1.5em] text-balance">
+      You can reach out to me via email or LinkedIn.
+    </p>
+  </Section>
 </MainLayout>
