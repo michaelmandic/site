@@ -8,13 +8,8 @@
 }
 
 ::selection {
-  background-color: black;
-  color: white;
-
-  @variant dark {
-    background-color: white;
-    color: black;
-  }
+  background-color: var(--color-emerald-400);
+  color: black;
 }
 
 :root, 

@@ -3,11 +3,13 @@ import { PanelLeft, PanelLeftClose } from "@lucide/astro";
 ---
 
 <header
-  class="fixed top-0 left-0 w-full lg:px-7 bg-linear-to-b from-neutral-100 dark:from-neutral-900 to-transparent h-30 items-start flex justify-center"
+  class="fixed top-0 left-0 w-full lg:px-7 bg-linear-to-b from-neutral-100 dark:from-neutral-900 to-transparent h-40 items-start flex justify-center"
 >
   <div class="flex items-center justify-between px-5 w-full py-5 max-w-3xl">
     <div id="header-left flex justify-center h-16 items-center">
-      <div class="relative flex items-center h-8 font-display">
+      <div
+        class="relative flex items-center h-8 font-display dark:text-emerald-300 text-emerald-600"
+      >
         <a
           href="/"
           x-cloak
@@ -18,7 +20,7 @@ import { PanelLeft, PanelLeftClose } from "@lucide/astro";
           x-transition:leave="transition ease-out duration-100"
           x-transition:leave-start="opacity-100 scale-100"
           x-transition:leave-end="opacity-0 scale-100"
-          class="absolute left-0 w-max text-xl lg:text-2xl font-medium"
+          class="absolute left-0 w-max hover:opacity-50 active:scale-95 transition-all tracking-tight text-xl font-medium"
         >
           Michael Mandic
         </a>
@@ -32,7 +34,7 @@ import { PanelLeft, PanelLeftClose } from "@lucide/astro";
           x-transition:leave="transition ease-out duration-100"
           x-transition:leave-start="opacity-100 scale-100"
           x-transition:leave-end="opacity-0 scale-100"
-          class="absolute left-0 w-max font-black text-2xl lg:text-3xl"
+          class="absolute left-0 w-max hover:opacity-50 active:scale-95 transition-all font-black text-3xl"
         >
           M
         </a>
@@ -41,7 +43,7 @@ import { PanelLeft, PanelLeftClose } from "@lucide/astro";
     <div id="header-right flex items-center justify-center">
       <button
         @click="sidebarOpen = !sidebarOpen"
-        class="text-neutral-500 dark:text-neutral-400 block hover:text-black hover:dark:text-white hover:cursor-pointer transition-colors lg:hidden"
+        class="text-neutral-500 dark:text-neutral-400 block hover:opacity-50 active:scale-95 hover:cursor-pointer transition-colors lg:hidden"
       >
         <PanelLeft
           x-show="!sidebarOpen"

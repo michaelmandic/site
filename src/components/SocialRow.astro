@@ -1,0 +1,27 @@
+---
+import { Linkedin, Github, Mail } from "@lucide/astro";
+---
+
+<div class="px-5 text-neutral-500 dark:text-neutral-400 flex gap-2 my-4">
+  <a
+    href="mailto:mihajlomandic27@gmail.com"
+    class="bg-neutral-200 dark:bg-neutral-800 transition-all hover:text-white dark:hover:text-black active:scale-95 hover:bg-emerald-600 dark:hover:bg-emerald-300 rounded-lg p-2 inline-flex gap-2 justify-center items-center"
+  >
+    <Mail size={20} stroke-width={1.5} absoluteStrokeWidth={true} />
+    <span class="leading-4">Email</span>
+  </a>
+  <a
+    href="mailto:mihajlomandic27@gmail.com"
+    class="bg-neutral-200 dark:bg-neutral-800 transition-all hover:text-white dark:hover:text-black active:scale-95 hover:bg-emerald-600 dark:hover:bg-emerald-300 rounded-lg p-2 inline-flex justify-center items-center"
+  >
+    <Linkedin size={20} stroke-width={1.5} absoluteStrokeWidth={true} />
+    <span class="sr-only">LinkedIn</span>
+  </a>
+  <a
+    href="mailto:mihajlomandic27@gmail.com"
+    class="bg-neutral-200 dark:bg-neutral-800 transition-all hover:text-white dark:hover:text-black active:scale-95 hover:bg-emerald-600 dark:hover:bg-emerald-300 rounded-lg p-2 inline-flex justify-center items-center"
+  >
+    <Github size={20} stroke-width={1.5} absoluteStrokeWidth={true} />
+    <span class="sr-only">GitHub</span>
+  </a>
+</div>
