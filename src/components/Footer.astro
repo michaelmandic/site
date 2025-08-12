@@ -1,4 +1,6 @@
 ---
+import { Heart } from "@lucide/astro";
+
 const currentYear = new Date().getFullYear();
 ---
 
@@ -26,5 +28,12 @@ const currentYear = new Date().getFullYear();
       CC BY-NC-ND 4.0 license
     </a>
   </p>
-  <p>Made with 💚</p>
+  <p>
+    Made with <Heart
+      size={14}
+      stroke-width={0}
+      fill="currentColor"
+      class="inline align-text-top dark:text-emerald-300 text-emerald-500"
+    />
+  </p>
 </footer>
