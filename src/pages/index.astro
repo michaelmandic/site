@@ -7,7 +7,9 @@ import SocialRow from "../components/SocialRow.astro";
 
 <MainLayout>
   <Hero title="Hello World, I'm Mike">
-    <p class="font-text px-5 leading-[1.5em] mb-4 text-balance text-white">
+    <p
+      class="font-text px-5 leading-[1.5em] mb-4 text-balance text-black dark:text-white"
+    >
       I'm a software engineer based in Belgrade, citizen of Serbia and the EU.
     </p>
     <SocialRow />
@@ -19,7 +21,7 @@ import SocialRow from "../components/SocialRow.astro";
         a love for building software.
       </p>
 
-      <div x-show="expanded" x-transition class="mt-4">
+      <div x-show="expanded" x-transition.origin.top.left class="mt-4">
         <p class="mb-4">
           These days, I'm most interested in web development; the web feels like
           a massive portal where you can instantly share something you've built
@@ -49,7 +51,7 @@ import SocialRow from "../components/SocialRow.astro";
 
       <button
         @click="expanded = !expanded"
-        class="link hover:cursor-pointer text-emerald-300"
+        class="link hover:cursor-pointer dark:text-emerald-300 text-emerald-500"
         ><span x-text="expanded ? 'Less' : 'More'"></span></button
       >
     </div>
@@ -102,15 +104,16 @@ import SocialRow from "../components/SocialRow.astro";
   </Section> -->
 
   <Section title="Contact">
-    <p class="font-text px-5 leading-[1.5em] text-balance">
+    <p class="font-text px-5 leading-[1.5em]">
       Send me an email to this domain or to <a
         href="mailto:mihajlomandic27@gmail.com"
         target="_blank"
-        class="link">mihajlomandic27@gmail.com</a
+        class="link dark:text-emerald-300 text-emerald-500"
+        >mihajlomandic27@gmail.com</a
       >, or message me on <a
         href="https://www.linkedin.com/in/michael-mandic/"
         target="_blank"
-        class="link">LinkedIn</a
+        class="link dark:text-emerald-300 text-emerald-500">LinkedIn</a
       >!
     </p>
   </Section>

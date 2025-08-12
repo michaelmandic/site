@@ -3,9 +3,11 @@ import { PanelLeft, PanelLeftClose } from "@lucide/astro";
 ---
 
 <header
-  class="fixed top-0 left-0 w-full lg:px-7 bg-linear-to-b from-neutral-100 dark:from-neutral-900 to-transparent h-40 items-start flex justify-center"
+  class="fixed top-0 left-0 w-full pointer-events-none lg:px-7 bg-linear-to-b from-neutral-100 dark:from-neutral-900 to-transparent h-40 items-start flex justify-center"
 >
-  <div class="flex items-center justify-between px-5 w-full py-5 max-w-3xl">
+  <div
+    class="flex items-center justify-between px-5 w-full py-5 max-w-3xl pointer-events-auto"
+  >
     <div id="header-left flex justify-center h-16 items-center">
       <div
         class="relative flex items-center h-8 font-display dark:text-emerald-300 text-emerald-500"
