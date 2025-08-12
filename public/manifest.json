@@ -6,6 +6,29 @@
   "display": "standalone",
   "theme_color": "#171717",
   "background_color": "#171717",
+  "lang": "en",
+  "description": "Personal website of Michael Mandic, a software engineer based in Belgrade, Serbia.",
+  "categories": [
+    "developer",
+    "social",
+    "social networking"
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/screenshotnarrow01.png",
+      "sizes": "1170x2532",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Michael Mandic"
+    },
+    {
+      "src": "screenshots/screenshotwide01.png",
+      "sizes": "2880x1620",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Michael Mandic"
+    }
+  ],
   "icons": [
     {
       "src": "icon/icon192.png",
