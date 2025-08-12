@@ -16,3 +16,26 @@
 * {
   scrollbar-width: thin;
 }
+
+
+.link {
+  @apply transition-all;
+
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.15rem;
+  text-decoration-skip-ink: all;
+
+  &:hover {
+    color: var(--color-emerald-500);
+    text-decoration-color: var(--color-emerald-500);
+
+    text-decoration-thickness: 0.2rem;
+    text-decoration-skip-ink: none;
+
+    @variant dark {
+      color: var(--color-emerald-300);
+      text-decoration-color: var(--color-emerald-300);
+    }
+  }
+}
