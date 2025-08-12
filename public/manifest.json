@@ -1,0 +1,62 @@
+{
+  "short_name": "Michael M.",
+  "name": "Michael Mandic",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "theme_color": "#171717",
+  "background_color": "#171717",
+  "icons": [
+    {
+      "src": "icon/icon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon/icon384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "icon/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "imconricon024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "maskable/maskable1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "monochrome/monochrome192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "monochrome"
+    },
+    {
+      "src": "monochrome/monochrome384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "monochrome"
+    },
+    {
+      "src": "monochrome/monochrome512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "monochrome"
+    },
+    {
+      "src": "monochrome/monochrome1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "monochrome"
+    }
+  ]
+}
