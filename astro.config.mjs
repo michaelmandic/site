@@ -10,6 +10,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-
-  integrations: [alpinejs()]
+  integrations: [alpinejs()],
+  site: 'https://michaelmandic.com'
 });

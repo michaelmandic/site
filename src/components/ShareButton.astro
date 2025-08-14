@@ -1,0 +1,47 @@
+---
+import { Share } from "@lucide/astro";
+
+const {
+  title = "Michael Mandic",
+  text = "Personal website of Michael Mandic, a software engineer based in Belgrade, Serbia.",
+  url = new URL(Astro.url.pathname, Astro.site),
+} = Astro.props;
+
+const shareData = {
+  title: title,
+  text: text,
+  url: url,
+};
+---
+
+<button
+  data-share={JSON.stringify(shareData)}
+  id="shareButton"
+  class="bg-neutral-50 dark:bg-neutral-900 border-[1.5px] border-neutral-300 dark:border-neutral-800 hover:border-emerald-500 dark:hover:border-emerald-300 transition-all hover:text-white dark:hover:text-black active:scale-95 hover:bg-emerald-500 dark:hover:bg-emerald-300 rounded-lg p-1.5 inline-flex gap-1.5 justify-center items-center hover:cursor-pointer"
+>
+  <Share size={16} stroke-width={1.5} absoluteStrokeWidth={true} />
+</button>
+
+<script is:inline>
+  function handleShareButton() {
+    const btn = document.getElementById("shareButton");
+    if (!btn) return;
+    const shareData = JSON.parse(btn.dataset.share);
+
+    btn.addEventListener("click", async () => {
+      if (navigator.canShare) {
+        try {
+          await navigator.share(shareData);
+          console.log("Content shared successfully.");
+        } catch (err) {
+          console.log("Error sharing content: ", err);
+        }
+      } else {
+        alert("Sharing is not supported in this browser.");
+      }
+    });
+  }
+
+  document.addEventListener("astro:page-load", handleShareButton);
+  handleShareButton();
+</script>

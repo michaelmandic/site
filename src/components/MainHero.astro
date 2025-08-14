@@ -1,9 +1,63 @@
+---
+import SocialRow from "./SocialRow.astro";
+import ShareButton from "./ShareButton.astro";
+---
+
 <section class="text-neutral-500 dark:text-neutral-400">
-  <span class="px-6">Hello world, I'm</span>
-  <h1
-    class="font-display dark:text-emerald-300 text-emerald-500 text-4xl font-black  px-6"
-  >
-    Michael Mandic
-  </h1>
-  <slot />
+  <div class="flex justify-between items-start px-6">
+    <div>
+      <span>Hello world, I'm</span>
+      <h1
+        class="font-display dark:text-emerald-300 text-emerald-500 text-4xl font-black"
+      >
+        Michael Mandic
+      </h1>
+      <p class="font-text leading-[1.5em] mb-4 text-balance">
+        Software engineer based in Belgrade, citizen of Serbia and the EU.
+      </p>
+    </div>
+    <ShareButton />
+  </div>
+  <SocialRow />
+  <div x-data="{ expanded: false }" class="font-text px-6 leading-[1.5em]">
+    <p :class="expanded ? 'block' : 'inline'">
+      I've been into computers for as long as I can remember. It probably
+      started with video games, but what really stuck with me was the idea of
+      creating my own digital experiences. That curiosity eventually grew into a
+      love for building software.
+    </p>
+
+    <div x-show="expanded" x-transition.origin.top.left class="mt-4">
+      <p class="mb-4">
+        These days, I'm most interested in web development; the web feels like a
+        massive portal where you can instantly share something you've built with
+        the world. Still, I enjoy exploring all kinds of software and seeing how
+        different technologies fit together.
+      </p>
+      <p class="mb-4">
+        When I want to learn something new, I just dive in and start building. I
+        like creating things I can be proud of, and I try to write code that's
+        clean, readable and flexible enough to grow with the project. And above
+        all, I think it's important to respect the people who use what I make.
+      </p>
+      <p class="mb-4">
+        Outside of coding, I spend my time gaming, listening to music or
+        watching a movie or show. I also have a habit of going down rabbit
+        holes; when I find something new and interesting, I tend to dive deep
+        into it, learning everything I can until I've satisfied my curiosity (or
+        until something else catches my attention).
+      </p>
+      <p class="mb-4">
+        I'm always open to new opportunities, whether that's freelance work, an
+        internship or something bigger, as long as it gives me a chance to
+        learn, improve and make something useful.
+      </p>
+    </div>
+
+    <button
+      @click="expanded = !expanded"
+      class="link hover:cursor-pointer dark:text-emerald-300 text-emerald-500"
+      ><span x-text="expanded ? 'Less' : 'More'"></span></button
+    >
+  </div>
 </section>
