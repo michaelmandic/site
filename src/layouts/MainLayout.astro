@@ -14,7 +14,7 @@ const {
 ---
 
 <!doctype html>
-<html lang="en" transition:name="root" transition:animate="none">
+<html lang="en">
 	<head>
 		<CommonHead />
 		<title>{title}</title>
@@ -32,10 +32,10 @@ const {
   }"
 		class="bg-neutral-50 min-h-screen dark:bg-neutral-900 text-black dark:text-white font-text flex flex-col justify-start lg:justify-center items-center"
 	>
-		<div class="pt-8 max-w-3xl w-full" transition:animate="fade">
+		<div class="pt-8 max-w-3xl w-full">
 			<slot />
 			<Footer />
 		</div>
-		<BottomNavBar transition:persist />
+		<BottomNavBar />
 	</body>
 </html>

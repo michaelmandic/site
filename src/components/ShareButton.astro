@@ -23,14 +23,15 @@ const shareData = {
   <span class="sr-only">Share</span>
 </button>
 
-<script is:inline>
-  function handleShareButton() {
-    const btn = document.getElementById("shareButton");
-    if (!btn) return;
-    const shareData = JSON.parse(btn.dataset.share);
+<script>
+  const btn = document.getElementById("shareButton");
+  let shareData: any;
+
+  if (btn && btn.dataset.share) {
+    shareData = JSON.parse(btn.dataset.share);
 
     btn.addEventListener("click", async () => {
-      if (navigator.canShare) {
+      if (navigator.share) {
         try {
           await navigator.share(shareData);
           console.log("Content shared successfully.");
@@ -42,7 +43,4 @@ const shareData = {
       }
     });
   }
-
-  document.addEventListener("astro:page-load", handleShareButton);
-  handleShareButton();
 </script>

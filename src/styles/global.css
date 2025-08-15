@@ -7,6 +7,10 @@
   --font-mono: "Space Mono", monospace;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 ::selection {
   background-color: var(--color-emerald-400);
   color: black;
