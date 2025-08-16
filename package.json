@@ -16,5 +16,9 @@
     "alpinejs": "^3.14.9",
     "astro": "^5.12.9",
     "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "rollup-plugin-analyzer": "^4.0.0",
+    "terser": "^5.43.1"
   }
 }

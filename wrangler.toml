@@ -1,7 +1,21 @@
 name = "personal-website"
 compatibility_date = "2025-08-08"
 
+# Enable performance optimizations
 [assets]
 directory = "./dist"
 not_found_handling = "404-page"
 html_handling = "auto-trailing-slash"
+# Enable browser caching
+serve_single_page_app = false
+
+# Add headers for better caching and security
+[[assets.headers]]
+name = "Cache-Control"
+values = ["public, max-age=31536000, immutable"]
+includes = ["*.js", "*.css", "*.woff2", "*.png", "*.jpg", "*.svg"]
+
+[[assets.headers]]
+name = "Cache-Control" 
+values = ["public, max-age=3600"]
+includes = ["*.html"]
