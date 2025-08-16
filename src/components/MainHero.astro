@@ -24,10 +24,15 @@ import ShareButton from "./ShareButton.astro";
       I've been into computers for as long as I can remember. It probably
       started with video games, but what really stuck with me was the idea of
       creating my own digital experiences. That curiosity eventually grew into a
-      love for building software.
+      love for building software. <button
+        x-show="!expanded"
+        @click="expanded = !expanded"
+        class="link hover:cursor-pointer dark:text-emerald-300 text-emerald-500"
+        >More</button
+      >
     </p>
 
-    <div x-show="expanded" x-transition.origin.top.left class="mt-4">
+    <div x-show="expanded" x-cloak x-transition.origin.top.left class="mt-4">
       <p class="mb-4">
         These days, I'm most interested in web development; the web feels like a
         massive portal where you can instantly share something you've built with
@@ -52,12 +57,11 @@ import ShareButton from "./ShareButton.astro";
         internship or something bigger, as long as it gives me a chance to
         learn, improve and make something useful.
       </p>
+      <button
+        @click="expanded = !expanded"
+        class="link hover:cursor-pointer dark:text-emerald-300 text-emerald-500"
+        ><span>Less</span></button
+      >
     </div>
-
-    <button
-      @click="expanded = !expanded"
-      class="link hover:cursor-pointer dark:text-emerald-300 text-emerald-500"
-      ><span x-text="expanded ? 'Less' : 'More'"></span></button
-    >
   </div>
 </section>

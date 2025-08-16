@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+[x-cloak] { display: none !important; }
+
 @theme {
   --font-text: "Inter", sans-serif;
   --font-text-tight: "Inter Tight", sans-serif;
