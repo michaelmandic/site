@@ -28,8 +28,8 @@
   @apply transition-all;
 
   &:hover {
-    color: var(--color-green-500);
-    text-decoration-color: var(--color-green-500);
+    color: var(--color-green-600);
+    text-decoration-color: var(--color-green-600);
 
     text-decoration: underline;
     text-decoration-thickness: 0.1rem;
