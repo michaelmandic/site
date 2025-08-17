@@ -14,10 +14,10 @@ const links = [
   class="fixed bottom-0 lg:top-1/2 lg:-ml-16 lg:-translate-y-1/2 w-full lg:w-auto z-50 flex justify-center items-center pb-5 lg:p-0"
 >
   <div
-    class="bg-white drop-shadow-md/10 dark:drop-shadow-lg/100 drop-shadow-neutral-900 dark:bg-neutral-800 border-[1.5px] rounded-full p-2 lg:py-4 border-neutral-200 dark:border-neutral-700"
+    class="bg-white drop-shadow-md/10  dark:drop-shadow-lg/100 drop-shadow-neutral-900 dark:bg-neutral-800 border-[1.5px] rounded-full p-2 lg:py-5 border-neutral-200 dark:border-neutral-700 "
   >
     <ul
-      class="flex lg:flex-col justify-between items-center text-neutral-500 lg:gap-4 dark:text-neutral-400"
+      class="flex lg:flex-col justify-between items-center text-neutral-500 lg:gap-5 dark:text-neutral-400"
     >
       {
         links.map(({ href, label, icon: Icon }) => {
@@ -27,9 +27,9 @@ const links = [
             <li>
               <a
                 href={href}
-                class={`flex w-16 lg:w-auto flex-col justify-center items-center gap-0.5 ${isActive ? "dark:text-emerald-300 text-emerald-500" : ""}`}
+                class={`flex w-16 transition-all active:scale-95 hover:text-black dark:hover:text-white lg:w-auto flex-col justify-center items-center  ${isActive ? "dark:text-green-300 text-green-500" : ""}`}
               >
-                <Icon size={24} stroke-width={1.5} absoluteStrokeWidth={true} />
+                <Icon size={24} stroke-width={2} absoluteStrokeWidth={true} />
                 <span class="text-xs">{label}</span>
               </a>
             </li>

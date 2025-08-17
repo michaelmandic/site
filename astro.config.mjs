@@ -43,5 +43,5 @@ export default defineConfig({
       entrypoint: '/src/alpine.js'
     })
   ],
-  site: 'https://michaelmandic.com'
+  site: 'https://mndc.dev'
 });

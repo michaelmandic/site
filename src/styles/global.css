@@ -14,7 +14,7 @@
 }
 
 ::selection {
-  background-color: var(--color-emerald-400);
+  background-color: var(--color-green-400);
   color: black;
 }
 
@@ -27,22 +27,18 @@
 .link {
   @apply transition-all;
 
-  text-decoration: underline;
-  text-decoration-thickness: 0.1rem;
-  text-underline-offset: 0.125rem;
-  text-decoration-skip-ink: all;
-
   &:hover {
-    color: var(--color-emerald-500);
-    text-decoration-color: var(--color-emerald-500);
+    color: var(--color-green-500);
+    text-decoration-color: var(--color-green-500);
 
-    text-decoration-thickness: 0.15rem;
-    text-underline-offset: 0.15rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 0.1rem;
     text-decoration-skip-ink: none;
 
     @variant dark {
-      color: var(--color-emerald-300);
-      text-decoration-color: var(--color-emerald-300);
+      color: var(--color-green-300);
+      text-decoration-color: var(--color-green-300);
     }
   }
 }
