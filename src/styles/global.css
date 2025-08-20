@@ -9,10 +9,6 @@
   --font-mono: "Space Mono", monospace;
 }
 
-@view-transition {
-  navigation: auto;
-}
-
 ::selection {
   background-color: var(--color-green-400);
   color: black;
