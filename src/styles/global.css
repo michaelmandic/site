@@ -10,8 +10,13 @@
 }
 
 ::selection {
-  background-color: var(--color-green-400);
-  color: black;
+  background-color: var(--color-green-600);
+  color: white;
+
+  @variant dark {
+    background-color: var(--color-green-300);
+    color: black;
+  }
 }
 
 :root, 
