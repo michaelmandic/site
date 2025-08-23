@@ -7,6 +7,30 @@
   --font-text-tight: "Inter Tight", sans-serif;
   --font-display: "Space Grotesk", sans-serif;
   --font-mono: "Space Mono", monospace;
+
+  --color-forest-50: hsl(0, 100%, 98%);
+  --color-forest-100: hsl(140, 50%, 96%);
+  --color-forest-200: hsl(140, 30%, 90%);
+  --color-forest-300: hsl(140, 20%, 84%);
+  --color-forest-400: hsl(140, 10%, 64%);
+  --color-forest-500: hsl(140, 6%, 46%);
+  --color-forest-600: hsl(140, 6%, 34%);
+  --color-forest-700: hsl(140, 6%, 26%);
+  --color-forest-800: hsl(140, 6%, 16%);
+  --color-forest-900: hsl(140, 6%, 10%);
+  --color-forest-950: hsl(140, 6%, 4%);
+
+  --color-green-50: hsl(140, 100%, 97%);
+  --color-green-100: hsl(140, 70%, 93%);
+  --color-green-200: hsl(140, 70%, 85%);
+  --color-green-300: hsl(140, 70%, 71%);
+  --color-green-400: hsl(140, 70%, 60%);
+  --color-green-500: hsl(140, 70%, 45%);
+  --color-green-600: hsl(140, 70%, 33%);
+  --color-green-700: hsl(140, 70%, 25%);
+  --color-green-800: hsl(140, 70%, 20%);
+  --color-green-900: hsl(140, 70%, 19%);
+  --color-green-950: hsl(140, 70%, 10%);
 }
 
 ::selection {
@@ -14,7 +38,7 @@
   color: white;
 
   @variant dark {
-    background-color: var(--color-green-300);
+    background-color: var(--color-green-400);
     color: black;
   }
 }
@@ -38,8 +62,8 @@
     text-decoration-skip-ink: none;
 
     @variant dark {
-      color: var(--color-green-300);
-      text-decoration-color: var(--color-green-300);
+      color: var(--color-green-400);
+      text-decoration-color: var(--color-green-400);
     }
   }
 }
