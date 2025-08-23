@@ -3,7 +3,7 @@ import { PanelLeft, PanelLeftClose } from "@lucide/astro";
 ---
 
 <header
-  class="fixed top-0 left-0 w-full pointer-events-none lg:px-7 bg-linear-to-b from-forest-100 dark:from-forest-900 to-transparent h-30 items-start flex justify-center"
+  class="fixed top-0 left-0 w-full pointer-events-none lg:px-7 bg-linear-to-b from-neutral-100 dark:from-neutral-900 to-transparent h-30 items-start flex justify-center"
 >
   <div
     class="flex items-center justify-between px-5 w-full py-5 max-w-3xl pointer-events-auto"
@@ -45,7 +45,7 @@ import { PanelLeft, PanelLeftClose } from "@lucide/astro";
     <div id="header-right flex items-center justify-center">
       <button
         @click="sidebarOpen = !sidebarOpen"
-        class="text-forest-500 dark:text-forest-400 block hover:opacity-50 active:scale-95 hover:cursor-pointer transition-colors lg:hidden"
+        class="text-neutral-500 dark:text-neutral-400 block hover:opacity-50 active:scale-95 hover:cursor-pointer transition-colors lg:hidden"
       >
         <PanelLeft
           x-show="!sidebarOpen"
