@@ -17,10 +17,10 @@ const shareData = {
 <button
   data-share={JSON.stringify(shareData)}
   id="shareButton"
-  class=" border-[1.5px] border-neutral-300 dark:border-neutral-800 hover:border-green-600 dark:hover:border-green-400 transition-all hover:text-white dark:hover:text-black active:scale-95 hover:bg-green-600 dark:hover:bg-green-400 rounded-lg p-1.5 inline-flex gap-1.5 justify-center items-center hover:cursor-pointer"
+  class="border-[1.5px] border-neutral-300 dark:border-neutral-800 hover:border-green-600 dark:hover:border-green-400 transition-all hover:text-white dark:hover:text-black active:scale-95 hover:bg-green-600 dark:hover:bg-green-400 rounded-lg p-1.5 inline-flex gap-1 justify-center items-center hover:cursor-pointer"
 >
   <Share size={16} stroke-width={1.5} absoluteStrokeWidth={true} />
-  <span class="sr-only">Share</span>
+  <span class="sr-only lg:not-sr-only leading-4 text-sm">SHARE</span>
 </button>
 
 <script>

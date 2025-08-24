@@ -2,29 +2,29 @@
 import { Linkedin, Github, Mail } from "@lucide/astro";
 ---
 
-<div class="px-6 text-neutral-500 dark:text-neutral-300 flex gap-2.5 mb-2">
+<div class="px-6 font-display flex gap-2.5">
   <a
     href="mailto:mihajlomandic27@gmail.com"
     target="_blank"
-    class=" border-[1.5px] border-neutral-300 dark:border-neutral-800 hover:border-green-600 dark:hover:border-green-400 transition-all hover:text-white dark:hover:text-black active:scale-95 hover:bg-green-600 dark:hover:bg-green-400 rounded-lg p-1.5 inline-flex gap-1.5 justify-center items-center"
+    class="border-[1.5px] border-neutral-300 dark:border-neutral-800 hover:border-green-600 dark:hover:border-green-400 transition-all hover:text-white dark:hover:text-black active:scale-95 hover:bg-green-600 dark:hover:bg-green-400 rounded-lg p-1.5 inline-flex gap-1.5 justify-center items-center"
   >
-    <Mail size={24} stroke-width={1.5} absoluteStrokeWidth={true} />
-    <span class="leading-4 sr-only">Email</span>
+    <Mail size={20} stroke-width={1.5} absoluteStrokeWidth={true} />
+    <span class="leading-4 sr-only lg:not-sr-only">EMAIL</span>
   </a>
   <a
     href="https://www.linkedin.com/in/michael-mandic/"
     target="_blank"
-    class=" border-[1.5px] border-neutral-300 dark:border-neutral-800 hover:border-green-600 dark:hover:border-green-400 transition-all hover:text-white dark:hover:text-black active:scale-95 hover:bg-green-600 dark:hover:bg-green-400 rounded-lg p-1.5 inline-flex gap-1.5 justify-center items-center"
+    class="border-[1.5px]  border-neutral-300 dark:border-neutral-800 hover:border-green-600 dark:hover:border-green-400 transition-all hover:text-white dark:hover:text-black active:scale-95 hover:bg-green-600 dark:hover:bg-green-400 rounded-lg p-1.5 inline-flex gap-1.5 justify-center items-center"
   >
-    <Linkedin size={24} stroke-width={1.5} absoluteStrokeWidth={true} />
-    <span class="sr-only">LinkedIn</span>
+    <Linkedin size={20} stroke-width={1.5} absoluteStrokeWidth={true} />
+    <span class="leading-4 sr-only  lg:not-sr-only">LINKEDIN</span>
   </a>
   <a
     href="https://github.com/michaelmandic"
     target="_blank"
-    class=" border-[1.5px] border-neutral-300 dark:border-neutral-800 hover:border-green-600 dark:hover:border-green-400 transition-all hover:text-white dark:hover:text-black active:scale-95 hover:bg-green-600 dark:hover:bg-green-400 rounded-lg p-1.5 inline-flex gap-1.5 justify-center items-center"
+    class="border-[1.5px] border-neutral-300 dark:border-neutral-800 hover:border-green-600 dark:hover:border-green-400 transition-all hover:text-white dark:hover:text-black active:scale-95 hover:bg-green-600 dark:hover:bg-green-400 rounded-lg p-1.5 inline-flex gap-1.5 justify-center items-center"
   >
-    <Github size={24} stroke-width={1.5} absoluteStrokeWidth={true} />
-    <span class="sr-only">GitHub</span>
+    <Github size={20} stroke-width={1.5} absoluteStrokeWidth={true} />
+    <span class="leading-4 sr-only lg:not-sr-only">GITHUB</span>
   </a>
 </div>

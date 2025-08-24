@@ -21,16 +21,16 @@
   --color-forest-950: hsl(140, 6%, 4%);
 
   --color-green-50: hsl(130, 100%, 97%);
-  --color-green-100: hsl(130, 70%, 93%);
+  --color-green-100: hsl(130, 90%, 93%);
   --color-green-200: hsl(130, 70%, 85%);
-  --color-green-300: hsl(130, 70%, 71%);
-  --color-green-400: hsl(130, 70%, 55%);
-  --color-green-500: hsl(130, 70%, 45%);
-  --color-green-600: hsl(130, 70%, 33%);
-  --color-green-700: hsl(130, 70%, 25%);
-  --color-green-800: hsl(130, 70%, 20%);
-  --color-green-900: hsl(130, 70%, 19%);
-  --color-green-950: hsl(130, 70%, 10%);
+  --color-green-300: hsl(130, 80%, 71%);
+  --color-green-400: hsl(130, 60%, 55%);
+  --color-green-500: hsl(130, 60%, 45%);
+  --color-green-600: hsl(130, 60%, 33%);
+  --color-green-700: hsl(130, 60%, 25%);
+  --color-green-800: hsl(130, 60%, 20%);
+  --color-green-900: hsl(130, 60%, 19%);
+  --color-green-950: hsl(130, 60%, 10%);
 
   --color-neutral-50: hsl(0, 0%, 98%);
   --color-neutral-100: hsl(0, 0%, 96%);
