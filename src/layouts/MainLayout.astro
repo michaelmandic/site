@@ -1,11 +1,8 @@
 ---
+import "../styles/inter.css";
 import "../styles/global.css";
 import CommonHead from "../components/CommonHead.astro";
-import Header from "../components/Header.astro";
-import Sidebar from "../components/Sidebar.astro";
 import Footer from "../components/Footer.astro";
-import OverflowGradients from "../components/OverflowGradients.astro";
-import Navbar from "../components/Navbar.astro";
 
 const {
 	title = "Michael Mandic",
@@ -21,21 +18,11 @@ const {
 		<meta name="description" content={desc} />
 	</head>
 	<body
-		x-data="{ 
-    sidebarOpen: false, 
-    scrolled: false,
-    init() {
-      window.addEventListener('scroll', () => {
-        this.scrolled = window.scrollY > 50;
-      });
-    }
-  }"
-		class="bg-neutral-100 min-h-screen relative dark:bg-neutral-900 text-black dark:text-white font-text"
+		class="bg-neutral-50 min-h-screen dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400 "
 	>
-		<div class="pt-8 max-w-4xl w-full mx-auto lg:pt-28">
+		<div class="pt-16 px-6 max-w-2xl w-full mx-auto">
 			<slot />
 			<Footer />
 		</div>
-		<Navbar />
 	</body>
 </html>

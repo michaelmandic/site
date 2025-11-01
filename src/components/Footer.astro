@@ -1,18 +1,9 @@
 ---
-import { Heart } from "@lucide/astro";
-
 const currentYear = new Date().getFullYear();
 ---
 
-<footer
-  class="px-6 text-neutral-500 dark:text-neutral-400 text-center font-text mt-16 text-xs pb-32 lg:pb-8 gap-1 flex justify-center items-center flex-col"
->
-  <p>
-    {currentYear} © Made with <Heart
-      size={14}
-      stroke-width={0}
-      fill="currentColor"
-      class="inline align-text-top dark:text-green-400 text-green-600"
-    /> by Michael Mandic
-  </p>
+<footer class="text-center pt-16 pb-8">
+  <small>
+    {currentYear} © Michael Mandic
+  </small>
 </footer>
