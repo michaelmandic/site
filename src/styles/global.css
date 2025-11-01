@@ -2,80 +2,41 @@
 
 [x-cloak] { display: none !important; }
 
-@theme {
-  --font-text: "Inter", sans-serif;
-  --font-text-tight: "Inter Tight", sans-serif;
-  --font-display: "JetBrains Mono", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
-
-  --color-forest-50: hsl(0, 100%, 98%);
-  --color-forest-100: hsl(140, 50%, 96%);
-  --color-forest-200: hsl(140, 30%, 90%);
-  --color-forest-300: hsl(140, 20%, 84%);
-  --color-forest-400: hsl(140, 10%, 64%);
-  --color-forest-500: hsl(140, 6%, 46%);
-  --color-forest-600: hsl(140, 6%, 34%);
-  --color-forest-700: hsl(140, 6%, 26%);
-  --color-forest-800: hsl(140, 6%, 16%);
-  --color-forest-900: hsl(140, 6%, 10%);
-  --color-forest-950: hsl(140, 6%, 4%);
-
-  --color-green-50: hsl(130, 100%, 97%);
-  --color-green-100: hsl(130, 90%, 93%);
-  --color-green-200: hsl(130, 70%, 85%);
-  --color-green-300: hsl(130, 80%, 71%);
-  --color-green-400: hsl(130, 60%, 55%);
-  --color-green-500: hsl(130, 60%, 45%);
-  --color-green-600: hsl(130, 60%, 33%);
-  --color-green-700: hsl(130, 60%, 25%);
-  --color-green-800: hsl(130, 60%, 20%);
-  --color-green-900: hsl(130, 60%, 19%);
-  --color-green-950: hsl(130, 60%, 10%);
-
-  --color-neutral-50: hsl(0, 0%, 98%);
-  --color-neutral-100: hsl(0, 0%, 96%);
-  --color-neutral-200: hsl(0, 0%, 90%);
-  --color-neutral-300: hsl(0, 0%, 83%);
-  --color-neutral-400: hsl(0, 0%, 63%);
-  --color-neutral-500: hsl(0, 0%, 45%);
-  --color-neutral-600: hsl(0, 0%, 32%);
-  --color-neutral-700: hsl(0, 0%, 25%);
-  --color-neutral-800: hsl(0, 0%, 15%);
-  --color-neutral-900: hsl(0, 0%, 8%);
-  --color-neutral-950: hsl(0, 0%, 4%);
+:root {
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-::selection {
-  background-color: var(--color-green-600);
-  color: white;
-
-  @variant dark {
-    background-color: var(--color-green-400);
-    color: black;
+@theme {
+  --font-sans: "InterVariable", "Inter", sans-serif;
+}
+/*
+@supports (font-variation-settings: normal) {
+  @theme {
+  --font-sans: "InterVariable", sans-serif;
   }
 }
-
-:root, 
-* {
-  scrollbar-width: thin;
-}
-
+*/
 
 .link {
   @apply transition-all;
 
-  &:hover {
-    color: var(--color-green-600);
-    text-decoration-color: var(--color-green-600);
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
 
-    text-decoration: underline;
-    text-decoration-thickness: 0.1rem;
-    text-underline-offset: 0.1rem;
-    text-decoration-skip-ink: none;
+  text-decoration-color: var(--color-neutral-500);
+
+  &:hover {
+    text-decoration-color: var(--color-neutral-950);
+    text-decoration-thickness: 0.12em;
 
     @variant dark {
-      color: var(--color-green-400);
-      text-decoration-color: var(--color-green-400);
+      text-decoration-color: var(--color-neutral-50);
     }
   }
+
+  &:active {
+    opacity: 50%;
+  }
 }
+

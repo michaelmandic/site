@@ -1,35 +1,10 @@
 ---
-import "../styles/global.css";
 import MainLayout from "../layouts/MainLayout.astro";
-import Hero from "../components/Hero.astro";
-import CommonHead from "../components/CommonHead.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <CommonHead />
-    <title>Page Not Found - Michael Mandic</title>
-    <meta
-      name="description"
-      content="Personal website of Michael Mandic, a software engineer based in Belgrade, Serbia."
-    />
-  </head>
-  <body
-    class="min-h-screen relative bg-neutral-50 dark:bg-neutral-900 text-black dark:text-white font-text flex justify-center items-center"
-  >
-    <div class="m-8">
-      <h1 class="text-[10rem] font-semibold text-green-600 dark:text-green-400">
-        :(
-      </h1>
-      <p class="text-3xl font-medium text-green-10 leading-[1.2em]">
-        <span class="font-mono font-black">404</span> Sorry, this page doesn't exist...
-      </p>
-      <a
-        href="/"
-        class="block text-center hover:opacity-50 active:scale-95 bg-green-600 dark:bg-green-400 text-display text-lg font-semibold text-neutral-50 dark:text-green-950 py-3 rounded-md mt-10"
-        >GO BACK HOME</a
-      >
-    </div>
-  </body>
-</html>
+<MainLayout>
+  <h1 class="text-xl pb-1 mt-6">404</h1>
+  <p class="text-pretty text-xl text-neutral-300">
+    Page could not be found.
+  </p>
+</MainLayout>

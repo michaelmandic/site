@@ -1,75 +1,57 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Section from "../components/Section.astro";
-import MainHero from "../components/MainHero.astro";
-import ExternalLinkIcon from "../components/ExternalLinkIcon.astro";
 ---
 
 <MainLayout>
-  <MainHero />
+  <h1
+    class="text-2xl pb-4 mt-6 text-neutral-950 dark:text-neutral-50 font-medium"
+  >
+    Michael Mandic
+  </h1>
+  <p class="text-pretty text-base/6 tracking-wide">
+    I'm a software engineer based in Belgrade, and a citizen of Serbia and the
+    EU. I've loved computers since I was a kid, and that curiosity grew into a
+    drive to learn, build and solve problems through code. I'm always open to
+    connect and explore new opportunities in tech!
+  </p>
+  <ul
+    class="pt-6 flex gap-4 flex-row font-medium text-neutral-950 dark:text-neutral-50"
+  >
+    <a href="" target="_blank" class="link">Email</a>
+    <a href="" target="_blank" class="link">LinkedIn</a>
+    <a href="" target="_blank" class="link">GitHub</a>
+  </ul>
 
-  <hr
-    class="mt-5 mb-12 mx-6 border-none h-[1.5px] bg-forest-200 dark:bg-forest-800"
-  />
+  <section class="pt-18">
+    <h2 class="font-medium pb-4 text-neutral-950 dark:text-neutral-50">
+      Education
+    </h2>
+    <div class="flex w-full justify-between">
+      <h3 class="text-neutral-950 dark:text-neutral-50 text-balance">
+        University of Belgrade, School of Electrical Engineering
+      </h3>
+      <small class="text-end text-balance">2024 - Now</small>
+    </div>
+    <p>BEng Software Engineering</p>
+  </section>
 
-  <Section title="Education">
-    <span class="px-6 block font-text text-xs mb-0.5">2024 - Present </span>
-    <p
-      class="font-text px-6 leading-[1.5em] text-black dark:text-white text-balance"
-    >
-      BEng in Software Engineering
+  <section class="pt-18">
+    <h2 class="font-medium pb-4 text-neutral-950 dark:text-neutral-50">
+      Skills
+    </h2>
+    <h3 class="text-neutral-950 dark:text-neutral-50 text-balance">
+      Programming Languages & Frameworks
+    </h3>
+    <p>Python, JavaScript, HTML/CSS, C, C++, Astro, Tailwind CSS</p>
+    <h3 class="text-neutral-950 dark:text-neutral-50 text-balance pt-2">
+      Tools
+    </h3>
+    <p>
+      VS Code, Visual Studio, JetBrains IDEs, Git, GitHub, Linux, MS 365/Office
     </p>
-    <span class="px-6 block font-text mt-0.5 text-xs"
-      >University of Belgrade, School of Electrical Engineering
-    </span>
-  </Section>
-
-  <Section title="Skills">
-    <ul
-      class="font-text text-black dark:text-white px-6 leading-[1.5em] text-balance flex flex-col gap-2"
-    >
-      <li>
-        <small
-          class="font-text block text-xs text-forest-500 dark:text-forest-400"
-          >Programming Languages & Frameworks
-        </small>Python, C++, JavaScript, HTML/CSS, React, Next.js, TailwindCSS
-      </li>
-      <li>
-        <small
-          class="font-text block text-xs text-forest-500 dark:text-forest-400"
-          >Tools</small
-        >Git, Linux, VS Code, PyCharm, Figma, MS Office/365
-      </li>
-      <li>
-        <small
-          class="font-text block text-xs text-forest-500 dark:text-forest-400"
-          >Languages</small
-        >
-        English (Fluent), Serbian (Native), German (Conversational)
-      </li>
-    </ul>
-  </Section>
-
-  <!-- <Section title="Projects">
-    <p class="font-text px-6 leading-[1.5em] text-balance">...</p>
-  </Section> -->
-
-  <!-- <Section title="Blog">
-    <p class="font-text px-6 leading-[1.5em] text-balance">...</p>
-  </Section> -->
-
-  <Section title="Contact">
-    <p class="font-text px-6 leading-[1.5em]">
-      Send me an email to this domain or to <a
-        href="mailto:mihajlomandic27@gmail.com"
-        target="_blank"
-        class="link dark:text-green-400 text-green-600 font-display"
-        >mihajlomandic27@gmail.com<ExternalLinkIcon /></a
-      >, or message me on <a
-        href="https://www.linkedin.com/in/michael-mandic/"
-        target="_blank"
-        class="link dark:text-green-400 text-green-600 font-display">LinkedIn<ExternalLinkIcon /></a
-      >!
-    </p>
-  </Section>
+    <h3 class="text-neutral-950 dark:text-neutral-50 text-balance pt-2">
+      Languages
+    </h3>
+    <p>English (Advanced), Serbian (Native), German (Conversational)</p>
+  </section>
 </MainLayout>
