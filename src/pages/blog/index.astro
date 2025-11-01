@@ -1,8 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/MainLayout.astro";
-import Hero from "../../components/Hero.astro";
-import Section from "../../components/Section.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -12,21 +10,4 @@ const posts = (await getCollection("blog")).sort(
 <MainLayout
   title="Michael Mandic Blog"
   desc="Blog of Michael Mandic, a software engineer based in Belgrade, Serbia."
->
-  <Hero title="Blog" />
-
-  <Section>
-    <ul>
-      {
-        posts.map((post) => (
-          <li>
-            <a href={`/blog/${post.id}`}>
-              <h2 class="title">{post.data.title}</h2>
-              <p class="date">{post.data.pubDate}</p>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </Section>
-</MainLayout>
+/>
