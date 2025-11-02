@@ -3,8 +3,6 @@ import { defineConfig } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
-import alpinejs from '@astrojs/alpinejs';
-
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
@@ -17,10 +15,6 @@ export default defineConfig({
       cssCodeSplit: true, // Split CSS for better caching
       rollupOptions: {
         output: {
-          manualChunks: {
-            // Split vendor code
-            alpine: ['alpinejs']
-          },
           // Better file naming for caching
           chunkFileNames: 'assets/[name]-[hash].js',
           assetFileNames: 'assets/[name]-[hash][extname]'
@@ -37,11 +31,5 @@ export default defineConfig({
       }
     }
   },
-  integrations: [
-    alpinejs({
-      // Use custom Alpine entry point for better tree-shaking
-      entrypoint: '/src/alpine.js'
-    })
-  ],
   site: 'https://mndc.dev'
 });
