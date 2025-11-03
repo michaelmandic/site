@@ -31,5 +31,16 @@ export default defineConfig({
       }
     }
   },
-  site: 'https://mndc.dev'
+  site: 'https://mndc.dev',
+  i18n: {
+    locales: ["en", "sr", "de"],
+    defaultLocale: "en",
+    fallback: {
+      sr: "en",
+      de: "en"
+    },
+    routing: {
+      fallbackType: "rewrite"
+    }
+  }
 });

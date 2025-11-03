@@ -1,12 +1,12 @@
 <svg width="488" height="455" viewBox="0 0 488 455" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     .shape {
-      fill: #10B981;
+      fill: #000000;
     }
 
     @media (prefers-color-scheme: dark) {
       .shape {
-        fill: #6EE7B7;
+        fill: #ffffff;
       }
     }
   </style>
