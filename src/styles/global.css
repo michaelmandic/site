@@ -6,6 +6,10 @@
   --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 @theme {
   --font-sans: "InterVariable", "Inter", sans-serif;
 
@@ -29,6 +33,23 @@
   }
 }
 */
+
+body {
+  background-color: var(--color-neutral-50);
+  color: var(--color-neutral-600);
+  @variant dark {
+    background-color: var(--color-neutral-800);
+    color: var(--color-neutral-350);
+  }
+}
+
+h1 {
+  @apply transition-all;
+}
+
+.title {
+  view-transition-name: title;
+}
 
 .link {
   @apply transition-all;

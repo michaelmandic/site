@@ -1,0 +1,11 @@
+---
+let { collapsed = true } = Astro.props;
+---
+
+<h1
+  class={` pb-4 text-neutral-950 dark:text-neutral-50  ${collapsed ? "text-center font-medium" : "text-4xl sm:text-5xl font-semibold pt-12"}`}
+>
+  <a href="/" class="title">
+    <slot />
+  </a>
+</h1>

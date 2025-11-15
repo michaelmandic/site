@@ -1,13 +1,10 @@
 ---
 import MainLayout from "../../layouts/MainLayout.astro";
+import Title from "../../components/Title.astro";
 ---
 
 <MainLayout>
-  <h1
-    class="text-4xl sm:text-5xl pb-4 mt-4 text-neutral-950 dark:text-neutral-50 font-semibold"
-  >
-    Mihajlo Mandić
-  </h1>
+  <Title collapsed={false}> Mihajlo Mandić </Title>
   <p class="leading-6 tracking-wide">
     Ja sam softverski inženjer iz Beograda i državljanin Srbije i Evropske
     unije. Računari su me fascinirali još od detinjstva, a ta radoznalost
@@ -55,7 +52,7 @@ import MainLayout from "../../layouts/MainLayout.astro";
       >
         Univerzitet u Beogradu, Elektrotehnički fakultet
       </h3>
-      <small class="text-end text-balance text-xs sm:text-sm basis-30"
+      <small class="text-end text-balance text-xs  basis-30"
         >2024 - sada</small
       >
     </div>

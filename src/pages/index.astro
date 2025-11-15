@@ -1,13 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Title from "../components/Title.astro";
 ---
 
 <MainLayout>
-  <h1
-    class="text-4xl sm:text-5xl pb-4 mt-4 text-neutral-950 dark:text-neutral-50 font-semibold"
-  >
-    Michael Mandic
-  </h1>
+  <Title collapsed={false}> Michael Mandic </Title>
   <p class="leading-6 tracking-wide">
     I'm a software engineer based in Belgrade, and a citizen of Serbia and the
     EU. I've loved computers since I was a kid, and that curiosity grew into a
@@ -55,7 +52,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       >
         University of Belgrade, School of Electrical Engineering
       </h3>
-      <small class="text-end text-balance text-xs sm:text-sm basis-30">2024 - Now</small>
+      <small class="text-end text-balance text-xs basis-30">2024 - Now</small>
     </div>
     <p>BSc Software Engineering</p>
   </section>

@@ -1,13 +1,10 @@
 ---
 import MainLayout from "../../layouts/MainLayout.astro";
+import Title from "../../components/Title.astro";
 ---
 
 <MainLayout>
-  <h1
-    class="text-4xl sm:text-5xl pb-4 mt-4 text-neutral-950 dark:text-neutral-50 font-semibold"
-  >
-    Michael Mandic
-  </h1>
+  <Title collapsed={false}> Michael Mandic </Title>
   <p class="leading-6 tracking-wide">
     Ich bin Softwareingenieur mit Sitz in Belgrad und Staatsbürger Serbiens
     sowie der EU. Ich liebe Computer seit meiner Kindheit, und diese Neugier hat
@@ -56,7 +53,7 @@ import MainLayout from "../../layouts/MainLayout.astro";
       >
         Universität Belgrad, Fakultät für Elektrotechnik
       </h3>
-      <small class="text-end text-balance text-xs sm:text-sm basis-30"
+      <small class="text-end text-balance text-xs  basis-30"
         >2024 - Heute</small
       >
     </div>
